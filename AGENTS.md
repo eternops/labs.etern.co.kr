@@ -88,3 +88,35 @@ COMMIT_BODY:
 
 - <한글로 작성한 변경 이유 및 구체적 내용 1>
 - <한글로 작성한 변경 이유 및 구체적 내용 2>
+
+## Pull Request & Push rules
+
+When the user requests a GitHub Push or Pull Request (e.g., "푸쉬해줘", "PR 만들어줘"):
+
+1. **Check Git Status**: Ensure all changes are committed using the "Commit rules" defined above before pushing.
+2. **Push to Remote**: Push the current local branch to the remote repository (GitHub).
+3. **Create Pull Request**: Generate a Pull Request template with a structured title and description based on the commit history.
+
+**Language Rule:**
+
+- All outputs (PR_TITLE, PR_BODY) MUST be written in **Korean**.
+
+Output format MUST strictly follow this structure:
+
+PR_TITLE:
+<[feat/fix] 한글로 작성한 PR 핵심 제목>
+
+PR_BODY:
+
+## 📝 작업 개요
+
+<이 PR에서 해결하려는 문제나 추가된 기능에 대한 요약 (한글)>
+
+## 🚀 주요 변경 사항
+
+- <변경 사항 1 (한글)>
+- <변경 사항 2 (한글)>
+
+## 💬 리뷰어에게 전달할 점 (선택)
+
+- <리뷰어가 중점적으로 봐야 할 부분이나 특이 사항 (한글)>
