@@ -21,6 +21,13 @@ Prefer:
 - markdown content
 - simple CSS
 - no unnecessary React
+- **I18n Consistency**: When adding a page in `/`, check if a corresponding page is needed in `/en`.
+- **Optimized Images**: Use `src/assets/` and Astro's `<Image />` component for local images.
+- **PascalCase**: Use PascalCase for `.astro` component filenames.
+
+Before finishing a task:
+
+- Run `npm run build` to ensure static generation works without errors.
 
 Avoid:
 
@@ -45,6 +52,14 @@ Products are linked to separate GitHub Pages project sites:
 
 ---
 
+## Internationalization (I18n)
+
+- Default language: Korean (root `/`).
+- English prefix: `/en`.
+- Always ensure links between KR and EN versions are correctly mapped in the navigation.
+
+---
+
 ## Product Boundary
 
 Do not implement ClayTube here.
@@ -52,6 +67,15 @@ Do not implement ClayTube here.
 ClayTube lives in its own repository.
 
 This repo only links to it.
+
+---
+
+## Strict Principle: Clarification First
+
+1. Do not guess or assume if the requirements are ambiguous, incomplete, or open to interpretation.
+2. If any aspect of the feature, architecture, edge case, or tech stack is unclear, STOP immediately. Do not write a single line of code.
+3. Instead, ask me clarification questions (maximum 3-4 bullet points) to fill in the missing information.
+4. Only proceed with coding after I answer your questions and explicitly say "Proceed".
 
 ---
 
