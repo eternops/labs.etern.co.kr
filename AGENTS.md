@@ -30,6 +30,7 @@ Prefer:
 - **I18n Consistency**: When adding a page in `/`, check if a corresponding page is needed in `/en`.
 - **Optimized Images**: Use `src/assets/` and Astro's `<Image />` component for local images.
 - **PascalCase**: Use PascalCase for `.astro` component filenames.
+- **Protected Files**: Do NOT modify `CHANGELOG.md`. This file is managed by GitHub Actions.
 
 Before finishing a task:
 
