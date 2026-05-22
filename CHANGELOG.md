@@ -1,5 +1,13 @@
 # Release Notes
 
+## v0.2.0 - 2026-05-22
+
+### What's Changed
+
+* feat: 브랜드 리뉴얼(ETERN Labs) 및 에이전트 가이드라인 업데이트 by [@cable8mm](https://github.com/cable8mm) in https://github.com/legacy-revival-studio/labs.etern.co.kr/pull/5
+
+**Full Changelog**: https://github.com/legacy-revival-studio/labs.etern.co.kr/compare/v0.1.1...v0.2.0
+
 ## v0.1.1 - 2026-05-22
 
 ### What's Changed
