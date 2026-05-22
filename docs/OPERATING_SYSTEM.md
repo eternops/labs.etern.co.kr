@@ -2,7 +2,7 @@
 
 ## 목적
 
-ETERN Labs는 제품을 성장시키기 위한 공간이 아니라,
+Legacy Revival Lab은 제품을 성장시키기 위한 공간이 아니라,
 제품 자산을 축적하고 보여주기 위한 공간입니다.
 
 ---
@@ -20,9 +20,9 @@ ETERN Labs는 제품을 성장시키기 위한 공간이 아니라,
 
 ---
 
-### 2. Labs는 Showcase
+### 2. Legacy Revival Lab은 Showcase
 
-Labs는 제품을 소개하고 의뢰를 받는 곳이다.
+Legacy Revival Lab은 제품을 소개하고 의뢰를 받는 곳이다.
 
 ---
 
@@ -54,4 +54,4 @@ GitHub Pages를 기본으로 한다.
 ### 6. Asset Accumulation
 
 모든 제품은 장기적으로
-ETERN의 기술 자산이 된다.
+Legacy Revival Studio의 기술 자산이 된다.
