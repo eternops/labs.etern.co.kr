@@ -38,7 +38,9 @@ npm run build
 
 Deploy:
 
-GitHub Pages via GitHub Actions.
+- GitHub Pages via GitHub Actions
+- Custom domain: `labs.etern.co.kr`
+- The build output is published from `dist/` to the `gh-pages` branch
 
 ---
 

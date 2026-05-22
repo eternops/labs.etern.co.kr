@@ -94,8 +94,9 @@ COMMIT_BODY:
 When the user requests a GitHub Push or Pull Request (e.g., "푸쉬해줘", "PR 만들어줘"):
 
 1. **Check Git Status**: Ensure all changes are committed using the "Commit rules" defined above before pushing.
-2. **Push to Remote**: Push the current local branch to the remote repository (GitHub).
-3. **Create Pull Request**: Generate a Pull Request template with a structured title and description based on the commit history.
+2. **Collect Commit History**: Retrieve **all commit messages** on the current branch that are not yet merged into the base branch (e.g., main or develop). Do NOT rely only on the last commit.
+3. **Summarize Entire Work**: Review the accumulated commit history and summarize the changes comprehensively for the Pull Request.
+4. **Push & Create PR**: Push the current local branch to the remote repository and generate a Pull Request.
 
 **Language Rule:**
 
@@ -110,12 +111,12 @@ PR_BODY:
 
 ## 📝 작업 개요
 
-<이 PR에서 해결하려는 문제나 추가된 기능에 대한 요약 (한글)>
+<해당 브랜치에서 진행된 전체 커밋 내용을 종합하여, 이번 PR이 해결하려는 문제나 추가된 기능을 요약 (한글)>
 
 ## 🚀 주요 변경 사항
 
-- <변경 사항 1 (한글)>
-- <변경 사항 2 (한글)>
+- <종합된 변경 사항 1 (한글)>
+- <종합된 변경 사항 2 (한글)>
 
 ## 💬 리뷰어에게 전달할 점 (선택)
 
