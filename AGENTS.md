@@ -1,5 +1,11 @@
 # AGENTS.md
 
+## Context Awareness
+
+- **Read README.md First**: Always read the `README.md` at the root to understand the overall project goal, organizational structure, and where other key documents are located.
+
+---
+
 ## Stack
 
 This repository uses **Astro**.
