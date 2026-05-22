@@ -147,19 +147,19 @@ When the user requests a GitHub Push or Pull Request (e.g., "푸쉬해줘", "PR 
 Output format MUST strictly follow this structure:
 
 PR_TITLE:
-<[feat/fix] 한글로 작성한 PR 핵심 제목>
+<feat/fix: 한글로 작성한 PR 핵심 제목>
 
 PR_BODY:
 
-## 📝 작업 개요
+## 작업 개요
 
 <해당 브랜치에서 진행된 전체 커밋 내용을 종합하여, 이번 PR이 해결하려는 문제나 추가된 기능을 요약 (한글)>
 
-## 🚀 주요 변경 사항
+## 주요 변경 사항
 
 - <종합된 변경 사항 1 (한글)>
 - <종합된 변경 사항 2 (한글)>
 
-## 💬 리뷰어에게 전달할 점 (선택)
+## 리뷰어에게 전달할 점 (선택)
 
 - <리뷰어가 중점적으로 봐야 할 부분이나 특이 사항 (한글)>
