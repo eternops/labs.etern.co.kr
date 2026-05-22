@@ -1,111 +1,118 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	lang="en"
-	title="Legacy Revival Lab"
-	description="Legacy Revival Lab introduces small static-first digital products and template-based build services."
+  lang="en"
+  title="Legacy Revival Lab"
+  description="Legacy Revival Lab introduces small static-first digital products and template-based build services."
 >
-	<section class="hero">
-		<p class="eyebrow">Static-first showcase</p>
-		<h1>Small digital products, built as lasting assets.</h1>
-		<p class="lede">
-			Legacy Revival Lab introduces product templates and project sites created by Legacy
-			Revival Studio. Each product lives in its own repository; Legacy Revival Lab keeps the
-			portfolio clear, focused, and easy to explore.
-		</p>
-		<div class="actions">
-			<a class="button" href="/en/products">View products</a>
-			<a class="button secondary" href="/en/contact">Start an inquiry</a>
-		</div>
-	</section>
+  <section class="py-20 md:py-32">
+    <p
+      class="text-accent font-extrabold tracking-widest text-sm uppercase mb-4"
+    >
+      Static-first showcase
+    </p>
+    <h1 class="text-balance">
+      Small digital products, built as lasting assets.
+    </h1>
+    <p class="text-muted text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
+      Legacy Revival Lab introduces product templates and project sites created
+      by Legacy Revival Studio. Each product lives in its own repository; Legacy
+      Revival Lab keeps the portfolio clear, focused, and easy to explore.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a
+        class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-8 py-3 hover:bg-accent-dark transition-colors no-underline"
+        href="/en/products">View products</a
+      >
+      <a
+        class="inline-flex items-center justify-center bg-panel border border-line text-ink font-bold rounded-full px-8 py-3 hover:bg-page transition-colors no-underline"
+        href="/en/contact">Start an inquiry</a
+      >
+    </div>
+  </section>
 
-	<section aria-labelledby="what-heading">
-		<p class="eyebrow">Legacy Revival Lab</p>
-		<h2 id="what-heading">A showcase for reusable product assets.</h2>
-		<div class="grid">
-			<div class="card">
-				<h3>Product repositories stay separate</h3>
-				<p>
-					Products are developed as independent projects, while Legacy Revival Lab links to
-					their live showcases and explains where each one fits.
-				</p>
-			</div>
-			<div class="card">
-				<h3>Template-first delivery</h3>
-				<p>
-					The focus is not SaaS subscriptions. Legacy Revival Studio uses product templates
-					to configure and deliver static sites quickly.
-				</p>
-			</div>
-			<div class="card">
-				<h3>Static by default</h3>
-				<p>
-					Astro and GitHub Pages keep the site fast, maintainable, and free from unnecessary
-					client-side JavaScript.
-				</p>
-			</div>
-		</div>
-	</section>
+  <section class="py-20 border-t border-line" aria-labelledby="what-heading">
+    <p
+      class="text-accent font-extrabold tracking-widest text-sm uppercase mb-4"
+    >
+      Legacy Revival Lab
+    </p>
+    <h2 id="what-heading">A showcase for reusable product assets.</h2>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3 mt-12">
+      <div class="bg-panel border border-line rounded-xl p-8 shadow-sm">
+        <h3>Product repositories stay separate</h3>
+        <p class="mb-0">
+          Products are developed as independent projects, while Legacy Revival
+          Lab links to their live showcases and explains where each one fits.
+        </p>
+      </div>
+      <div class="bg-panel border border-line rounded-xl p-8 shadow-sm">
+        <h3>Template-first delivery</h3>
+        <p class="mb-0">
+          The focus is not SaaS subscriptions. Legacy Revival Studio uses
+          product templates to configure and deliver static sites quickly.
+        </p>
+      </div>
+      <div class="bg-panel border border-line rounded-xl p-8 shadow-sm">
+        <h3>Static by default</h3>
+        <p class="mb-0">
+          Astro and GitHub Pages keep the site fast, maintainable, and free from
+          unnecessary client-side JavaScript.
+        </p>
+      </div>
+    </div>
+  </section>
 
-	<section aria-labelledby="products-heading">
-		<p class="eyebrow">Products</p>
-		<h2 id="products-heading">Current product</h2>
-		<article class="product-feature">
-			<div>
-				<h3>ClayTube</h3>
-				<p>
-					A static video portal generator that automatically syncs YouTube channels and
-					publishes them as a focused showcase.
-				</p>
-			</div>
-			<a class="button secondary" href="/claytube">Open ClayTube</a>
-		</article>
-	</section>
+  <section
+    class="py-20 border-t border-line"
+    aria-labelledby="products-heading"
+  >
+    <p
+      class="text-accent font-extrabold tracking-widest text-sm uppercase mb-4"
+    >
+      Products
+    </p>
+    <h2 id="products-heading">Current product</h2>
+    <article
+      class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 bg-panel border border-line rounded-2xl p-8 md:p-12 mt-8"
+    >
+      <div class="max-w-2xl">
+        <h3 class="text-2xl font-bold mb-4">ClayTube</h3>
+        <p class="text-lg mb-0">
+          A static video portal generator that automatically syncs YouTube
+          channels and publishes them as a focused showcase.
+        </p>
+      </div>
+      <a
+        class="inline-flex items-center justify-center bg-ink text-white font-bold rounded-full px-8 py-3 hover:opacity-90 transition-opacity no-underline whitespace-nowrap"
+        href="/claytube">Open ClayTube</a
+      >
+    </article>
+  </section>
 
-	<section class="cta" aria-labelledby="contact-heading">
-		<p class="eyebrow">Contact</p>
-		<h2 id="contact-heading">Need a template-based product site?</h2>
-		<p>
-			Send a brief inquiry with the product type, desired pages, and target launch date.
-			Legacy Revival Studio will review the fit and next steps.
-		</p>
-		<div class="actions">
-			<a class="button" href="/en/contact">Contact Legacy Revival Lab</a>
-		</div>
-	</section>
+  <section
+    class="py-20 mb-20 border-t border-line"
+    aria-labelledby="contact-heading"
+  >
+    <div class="bg-accent/5 rounded-3xl p-8 md:p-16 text-center">
+      <p
+        class="text-accent font-extrabold tracking-widest text-sm uppercase mb-6"
+      >
+        Contact
+      </p>
+      <h2 id="contact-heading" class="max-w-3xl mx-auto">
+        Need a template-based product site?
+      </h2>
+      <p class="text-lg max-w-2xl mx-auto mb-10">
+        Send a brief inquiry with the product type, desired pages, and target
+        launch date. Legacy Revival Studio will review the fit and next steps.
+      </p>
+      <a
+        class="inline-flex items-center justify-center bg-accent text-white font-bold rounded-full px-10 py-4 hover:bg-accent-dark transition-colors no-underline"
+        href="/en/contact">Contact Legacy Revival Lab</a
+      >
+    </div>
+  </section>
 </BaseLayout>
-
-<style>
-	.hero {
-		min-height: 68vh;
-		padding-top: 88px;
-	}
-
-	.product-feature,
-	.cta {
-		align-items: center;
-		background: #ffffff;
-		border: 1px solid var(--color-line);
-		border-radius: 8px;
-		display: flex;
-		gap: 24px;
-		justify-content: space-between;
-		padding: 28px;
-	}
-
-	.product-feature p,
-	.cta p {
-		margin-bottom: 0;
-		max-width: 680px;
-	}
-
-	@media (max-width: 720px) {
-		.product-feature,
-		.cta {
-			align-items: flex-start;
-			flex-direction: column;
-		}
-	}
-</style>

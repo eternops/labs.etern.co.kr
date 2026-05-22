@@ -1,64 +1,61 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout
-	title="제품 | Legacy Revival Lab"
-	description="Legacy Revival Lab의 제품 목록입니다. ClayTube와 향후 정적 우선 템플릿을 소개합니다."
+  title="제품 | Legacy Revival Lab"
+  description="Legacy Revival Lab의 제품 목록입니다. ClayTube와 향후 정적 우선 템플릿을 소개합니다."
 >
-	<section class="page-hero">
-		<p class="eyebrow">제품</p>
-		<h1>독립 제품 자산을 한곳에 모읍니다.</h1>
-		<p class="lede">
-			Legacy Revival Lab은 각 제품을 독립 저장소와 배포 흐름으로 유지하면서, 라이브
-			쇼케이스로 연결합니다.
-		</p>
-	</section>
+  <section class="py-20 md:py-32">
+    <p
+      class="text-accent font-extrabold tracking-widest text-sm uppercase mb-4"
+    >
+      제품
+    </p>
+    <h1>독립 제품 자산을 한곳에 모읍니다.</h1>
+    <p class="text-muted text-lg md:text-xl max-w-2xl leading-relaxed">
+      Legacy Revival Lab은 각 제품을 독립 저장소와 배포 흐름으로 유지하면서,
+      라이브 쇼케이스로 연결합니다.
+    </p>
+  </section>
 
-	<section aria-labelledby="active-heading">
-		<h2 id="active-heading">운영 중</h2>
-		<div class="grid">
-			<article class="card product-card">
-				<p class="status">운영 중</p>
-				<h3>ClayTube</h3>
-				<p>
-					YouTube 채널을 자동 동기화하는 정적 영상 포털 생성기입니다. ClayTube는 별도
-					저장소에서 관리되며, 이 사이트에서는 프로젝트 쇼케이스로만 연결합니다.
-				</p>
-				<a class="button secondary" href="/claytube">프로젝트 사이트 열기</a>
-			</article>
-		</div>
-	</section>
+  <section class="py-20 border-t border-line" aria-labelledby="active-heading">
+    <h2 id="active-heading">운영 중</h2>
+    <div class="mt-8">
+      <article
+        class="bg-panel border border-line rounded-xl p-8 max-w-xl shadow-sm"
+      >
+        <p
+          class="text-accent font-extrabold text-[0.7rem] tracking-widest uppercase mb-3"
+        >
+          운영 중
+        </p>
+        <h3 class="text-2xl font-bold mb-4">ClayTube</h3>
+        <p class="mb-8">
+          YouTube 채널을 자동 동기화하는 정적 영상 포털 생성기입니다. ClayTube는
+          별도 저장소에서 관리되며, 이 사이트에서는 프로젝트 쇼케이스로만
+          연결합니다.
+        </p>
+        <a
+          class="inline-flex items-center justify-center bg-panel border border-line text-ink font-bold rounded-full px-6 py-2 hover:bg-page transition-colors no-underline"
+          href="/claytube">프로젝트 사이트 열기</a
+        >
+      </article>
+    </div>
+  </section>
 
-	<section aria-labelledby="future-heading">
-		<h2 id="future-heading">향후 제품</h2>
-		<div class="card">
-			<p>
-				향후 제품 템플릿은 Legacy Revival Lab의 재사용 가능한 정적 우선 자산으로
-				축적됩니다.
-			</p>
-		</div>
-	</section>
+  <section
+    class="py-20 mb-20 border-t border-line"
+    aria-labelledby="future-heading"
+  >
+    <h2 id="future-heading">향후 제품</h2>
+    <div
+      class="bg-panel/50 border border-dashed border-line rounded-xl p-10 text-center"
+    >
+      <p class="mb-0 text-muted">
+        향후 제품 템플릿은 Legacy Revival Lab의 재사용 가능한 정적 우선 자산으로
+        축적됩니다.
+      </p>
+    </div>
+  </section>
 </BaseLayout>
-
-<style>
-	.page-hero {
-		padding-top: 88px;
-	}
-
-	.status {
-		color: var(--color-accent);
-		font-size: 0.8rem;
-		font-weight: 800;
-		margin-bottom: 12px;
-		text-transform: uppercase;
-	}
-
-	.product-card {
-		max-width: 560px;
-	}
-
-	.product-card .button {
-		margin-top: 12px;
-	}
-</style>
