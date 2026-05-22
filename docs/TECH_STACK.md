@@ -33,7 +33,7 @@ TypeScript
 
 ### Styling
 
-Simple CSS (or Tailwind if needed later)
+Tailwind CSS v4
 
 ---
 
