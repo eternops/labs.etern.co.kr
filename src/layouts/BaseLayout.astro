@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import ThemeToggle from "../components/ThemeToggle.astro";
 
 interface Props {
   title?: string;
@@ -50,6 +51,19 @@ const brandHref = isEnglish ? "/en" : "/";
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script is:inline>
+      // 페이지 로드 시 깜빡임 방지용 스크립트
+      const getTheme = () => {
+        const stored = localStorage.getItem('theme');
+        if (stored && stored !== 'system') return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+      if (getTheme() === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </head>
   <body class="m-0 min-w-[320px]">
     <header
@@ -77,9 +91,10 @@ const brandHref = isEnglish ? "/en" : "/";
           ))
         }
         <a
-          class="rounded-full px-3 py-2 no-underline bg-panel text-ink border border-line font-bold"
+          class="rounded-full px-3 py-2 no-underline bg-panel text-ink border border-line font-bold hover:bg-page transition-colors"
           href={languageHref}>{languageLabel}</a
         >
+        <ThemeToggle />
       </nav>
     </header>
     <main class="w-[min(1120px,calc(100%-32px))] mx-auto">

@@ -43,6 +43,18 @@ Avoid:
 
 ---
 
+## Directory Strictness
+
+- **Explicit Paths Only**: Do not guess file locations. Always verify against the existing `src/` structure.
+- **Component Location**: All UI components MUST be in `src/components/`.
+- **Style Location**: All CSS files MUST be in `src/styles/`.
+- **Layout Location**: All layout components MUST be in `src/layouts/`.
+- **Asset Location**: All images and local assets MUST be in `src/assets/` (per Astro convention).
+- **Path Verification Protocol**: BEFORE providing any code or diff, the agent MUST explicitly list the file paths it intends to modify or create.
+- **Zero Tolerance for Path Guessing**: If the agent is unsure of a directory, it MUST list the contents of `src` using `ls` before proceeding. Placing a `.astro` component in `src/styles/` is a critical failure.
+
+---
+
 ## Routing
 
 Primary pages:
