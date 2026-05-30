@@ -5,10 +5,10 @@ export default {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'all',
-  
+
   // 💡 중요: Astro 플러그인을 등록합니다.
   plugins: ['prettier-plugin-astro'],
-  
+
   // Astro 파일에 맞는 파서(Parser)를 지정합니다.
   overrides: [
     {

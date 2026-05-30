@@ -12,7 +12,7 @@ export default defineConfig({
   base: isProd ? '/labs/' : '/',
 
   trailingSlash: 'always',
-  
+
   // Astro의 기본 개발 서버 환경 설정 (Nginx/Herd가 바라볼 수 있도록 문을 열어줍니다)
   server: {
     host: true,
@@ -20,7 +20,7 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwind()],
-    
+
     // Nginx(Herd) 호스트 허용 설정 (Vite 6 내부 보안 정책 우회)
     server: {
       strictPort: true,

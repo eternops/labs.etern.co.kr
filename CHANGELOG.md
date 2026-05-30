@@ -4,7 +4,7 @@
 
 ### What's Changed
 
-* chore: rename domain from `labs.etern.co.kr` to `etern.co.kr/labs` by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/9
+- chore: rename domain from `labs.etern.co.kr` to `etern.co.kr/labs` by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/9
 
 **Full Changelog**: https://github.com/eternops/labs/compare/v0.2.1...v0.2.2
 
@@ -12,9 +12,9 @@
 
 ### What's Changed
 
-* prompt: make commit and pr rules compact by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/6
-* chore: set dev environment by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/7
-* feat: replace legacy titles with eternops by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/8
+- prompt: make commit and pr rules compact by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/6
+- chore: set dev environment by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/7
+- feat: replace legacy titles with eternops by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs.etern.co.kr/pull/8
 
 **Full Changelog**: https://github.com/eternops/labs.etern.co.kr/compare/v0.2.0...v0.2.1
 
@@ -22,7 +22,7 @@
 
 ### What's Changed
 
-* feat: 브랜드 리뉴얼(ETERN Labs) 및 에이전트 가이드라인 업데이트 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/5](https://github.com/eternops/labs.etern.co.kr/pull/5)
+- feat: 브랜드 리뉴얼(ETERN Labs) 및 에이전트 가이드라인 업데이트 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/5](https://github.com/eternops/labs.etern.co.kr/pull/5)
 
 **Full Changelog**: [https://github.com/eternops/labs.etern.co.kr/compare/v0.1.1...v0.2.0](https://github.com/eternops/labs.etern.co.kr/compare/v0.1.1...v0.2.0)
 
@@ -30,7 +30,7 @@
 
 ### What's Changed
 
-* feat: 브랜드 리뉴얼(ETERN Labs) 반영 및 에이전트 운영 규칙 강화 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/4](https://github.com/eternops/labs.etern.co.kr/pull/4)
+- feat: 브랜드 리뉴얼(ETERN Labs) 반영 및 에이전트 운영 규칙 강화 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/4](https://github.com/eternops/labs.etern.co.kr/pull/4)
 
 **Full Changelog**: [https://github.com/eternops/labs.etern.co.kr/compare/v0.1.0...v0.1.1](https://github.com/eternops/labs.etern.co.kr/compare/v0.1.0...v0.1.1)
 
@@ -38,12 +38,12 @@
 
 ### What's Changed
 
-* feat: Add PR and push rules guidance from AGENTS.md by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/1](https://github.com/eternops/labs.etern.co.kr/pull/1)
-* feat: AI 에이전트 행동 지침(AGENTS.md) 문서 추가 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/2](https://github.com/eternops/labs.etern.co.kr/pull/2)
-* feat: Tailwind v4 도입 및 AI 에이전트 행동 지침 구축 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/3](https://github.com/eternops/labs.etern.co.kr/pull/3)
+- feat: Add PR and push rules guidance from AGENTS.md by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/1](https://github.com/eternops/labs.etern.co.kr/pull/1)
+- feat: AI 에이전트 행동 지침(AGENTS.md) 문서 추가 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/2](https://github.com/eternops/labs.etern.co.kr/pull/2)
+- feat: Tailwind v4 도입 및 AI 에이전트 행동 지침 구축 by [@cable8mm](https://github.com/cable8mm) in [https://github.com/eternops/labs.etern.co.kr/pull/3](https://github.com/eternops/labs.etern.co.kr/pull/3)
 
 ### New Contributors
 
-* [@cable8mm](https://github.com/cable8mm) made their first contribution in [https://github.com/eternops/labs.etern.co.kr/pull/1](https://github.com/eternops/labs.etern.co.kr/pull/1)
+- [@cable8mm](https://github.com/cable8mm) made their first contribution in [https://github.com/eternops/labs.etern.co.kr/pull/1](https://github.com/eternops/labs.etern.co.kr/pull/1)
 
 **Full Changelog**: [https://github.com/eternops/labs.etern.co.kr/commits/v0.1.0](https://github.com/eternops/labs.etern.co.kr/commits/v0.1.0)

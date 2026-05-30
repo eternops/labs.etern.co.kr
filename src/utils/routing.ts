@@ -37,28 +37,28 @@ export function resolveHref({
   baseUrl,
   currentPath,
 }: ResolveHrefOptions): string {
-  if (typeof href !== "string") return String(href);
-  if (!href.startsWith("/")) return href;
+  if (typeof href !== 'string') return String(href);
+  if (!href.startsWith('/')) return href;
 
   // 1. 순수 배포 경로 추출 (예: 'labs' 또는 '')
-  const cleanBase = baseUrl.replace(/^\/|\/$/g, "");
+  const cleanBase = baseUrl.replace(/^\/|\/$/g, '');
 
   // 2. 현재 브라우저의 위치 및 언어 감지
-  const isCurrentEnglish = currentPath.includes("/en/");
+  const isCurrentEnglish = currentPath.includes('/en/');
 
   // 3. 입력된 주소에서 슬래시를 기준으로 쪼개어 빈 값과 중복된 'labs'를 제거
   let segments = href
-    .split("/")
-    .filter((seg) => seg !== "" && seg !== cleanBase);
+    .split('/')
+    .filter((seg) => seg !== '' && seg !== cleanBase);
 
   // 4. 영문 모드이거나 입력 주소에 이미 'en'이 포함되어 있다면 맨 앞에 'en'을 단 하나만 보장
   // 💡 수정: 현재 영문 페이지더라도, 이동할 주소(href)가 그냥 메인("/")인 경우는 en을 강제 주입하지 않음
-  const isTargetRoot = href === "/";
-  const hasEn = (isCurrentEnglish && !isTargetRoot) || segments[0] === "en";
+  const isTargetRoot = href === '/';
+  const hasEn = (isCurrentEnglish && !isTargetRoot) || segments[0] === 'en';
 
   if (hasEn) {
-    segments = segments.filter((seg) => seg !== "en");
-    segments.unshift("en");
+    segments = segments.filter((seg) => seg !== 'en');
+    segments.unshift('en');
   }
 
   // 5. 최상단에 배포 경로('labs')가 있다면 끼워 넣음
@@ -67,5 +67,5 @@ export function resolveHref({
   }
 
   // 6. trailingSlash: 'always' 설정에 맞춰 끝에 무조건 '/' 조립
-  return "/" + segments.join("/") + "/";
+  return '/' + segments.join('/') + '/';
 }
