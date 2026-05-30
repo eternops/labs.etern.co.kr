@@ -1,5 +1,16 @@
 {
-    "cSpell.words": [
-        "ETERN"
-    ]
+    // 기본 포매터로 Prettier 설정
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+
+    // Astro 파일만을 위한 특화 설정
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode", // Astro 공식 확장 프로그램 사용
+        "editor.formatOnSave": true
+    },
+
+    // 저장할 때 ESLint가 고칠 수 있는 경고는 자동으로 고치도록 설정
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
 }
