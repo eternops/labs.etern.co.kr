@@ -103,45 +103,45 @@
 </div>
 
 <script>
-  const themeToggleButton = document.getElementById("theme-toggle-btn");
-  const themeDropdown = document.getElementById("theme-dropdown");
+  const themeToggleButton = document.getElementById('theme-toggle-btn');
+  const themeDropdown = document.getElementById('theme-dropdown');
 
   function applyTheme() {
-    const stored = localStorage.getItem("theme") || "system";
+    const stored = localStorage.getItem('theme') || 'system';
     const isSystemDark = window.matchMedia(
-      "(prefers-color-scheme: dark)",
+      '(prefers-color-scheme: dark)',
     ).matches;
 
     // 'system'일 경우 시스템 설정을 따르고, 아니면 저장된 값을 따름
-    const isDark = stored === "dark" || (stored === "system" && isSystemDark);
+    const isDark = stored === 'dark' || (stored === 'system' && isSystemDark);
 
-    document.documentElement.classList.toggle("dark", isDark);
+    document.documentElement.classList.toggle('dark', isDark);
 
     // 아이콘 업데이트
-    const sunIcon = document.getElementById("sun-icon");
-    const moonIcon = document.getElementById("moon-icon");
-    const systemIcon = document.getElementById("system-icon");
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
+    const systemIcon = document.getElementById('system-icon');
 
     if (sunIcon && moonIcon && systemIcon) {
-      sunIcon.classList.add("hidden");
-      moonIcon.classList.add("hidden");
-      systemIcon.classList.add("hidden");
+      sunIcon.classList.add('hidden');
+      moonIcon.classList.add('hidden');
+      systemIcon.classList.add('hidden');
 
-      if (stored === "light") sunIcon.classList.remove("hidden");
-      else if (stored === "dark") moonIcon.classList.remove("hidden");
-      else systemIcon.classList.remove("hidden");
+      if (stored === 'light') sunIcon.classList.remove('hidden');
+      else if (stored === 'dark') moonIcon.classList.remove('hidden');
+      else systemIcon.classList.remove('hidden');
     }
   }
 
   // 드롭다운 메뉴 토글
-  themeToggleButton?.addEventListener("click", (e) => {
+  themeToggleButton?.addEventListener('click', (e) => {
     e.stopPropagation(); // 버튼 클릭 시 문서 클릭 이벤트 전파 방지
-    themeDropdown?.classList.toggle("opacity-0");
-    themeDropdown?.classList.toggle("invisible");
+    themeDropdown?.classList.toggle('opacity-0');
+    themeDropdown?.classList.toggle('invisible');
   });
 
   // 드롭다운 외부 클릭 시 닫기
-  document.addEventListener("click", (e) => {
+  document.addEventListener('click', (e) => {
     const target = e.target;
     if (!(target instanceof HTMLElement)) return;
 
@@ -151,24 +151,24 @@
       !themeDropdown.contains(target) &&
       target !== themeToggleButton
     ) {
-      themeDropdown.classList.add("opacity-0");
-      themeDropdown.classList.add("invisible");
+      themeDropdown.classList.add('opacity-0');
+      themeDropdown.classList.add('invisible');
     }
   });
 
   // 이벤트 위임을 사용하여 클릭 이벤트 처리 (View Transitions 대응)
-  document.addEventListener("click", (e) => {
+  document.addEventListener('click', (e) => {
     const target = e.target;
     if (!(target instanceof HTMLElement)) return;
 
-    const btn = target.closest("[data-theme-set]");
+    const btn = target.closest('[data-theme-set]');
     if (btn) {
-      const theme = btn.getAttribute("data-theme-set");
+      const theme = btn.getAttribute('data-theme-set');
       if (theme) {
-        localStorage.setItem("theme", theme);
+        localStorage.setItem('theme', theme);
         applyTheme();
-        themeDropdown?.classList.add("opacity-0"); // 테마 선택 후 드롭다운 닫기
-        themeDropdown?.classList.add("invisible");
+        themeDropdown?.classList.add('opacity-0'); // 테마 선택 후 드롭다운 닫기
+        themeDropdown?.classList.add('invisible');
       }
     }
   });
@@ -178,17 +178,17 @@
 
   // 시스템 테마 변경 시 즉각 반응하도록 리스너 등록
   window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", () => {
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', () => {
       // 사용자가 명시적으로 선택한 테마가 없을(system) 때만 반응
       if (
-        localStorage.getItem("theme") === "system" ||
-        !localStorage.getItem("theme")
+        localStorage.getItem('theme') === 'system' ||
+        !localStorage.getItem('theme')
       ) {
         applyTheme();
       }
     });
 
   // Astro View Transitions 내비게이션 대응
-  document.addEventListener("astro:after-swap", applyTheme);
+  document.addEventListener('astro:after-swap', applyTheme);
 </script>
