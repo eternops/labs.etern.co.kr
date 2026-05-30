@@ -1,5 +1,13 @@
 # Release Notes
 
+## v1.0.1 - 2026-05-30
+
+### What's Changed
+
+* Fix claytube link by [@cable8mm](https://github.com/cable8mm) in https://github.com/eternops/labs/pull/12
+
+**Full Changelog**: https://github.com/eternops/labs/compare/v1.0.0...v1.0.1
+
 ## v1.0.0 - 2026-05-30
 
 ### What's Changed
